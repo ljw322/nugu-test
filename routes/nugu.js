@@ -1,8 +1,8 @@
 const express = require('express');
-const npkRequest = require('../nugu');
+const Request = require('../nugu');
 const { json } = require('../http');
 const router = express.Router();
 
-router.post('/', json(npkRequest));
+router.post('/', json(Request));
 
 module.exports = router;
